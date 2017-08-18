@@ -17,7 +17,7 @@ public static double roundTwoDeci(double toBeRounded)
 	rounding = (toBeRounded * 100.0)  - ((int)(toBeRounded * 100.0));
 	
 	if(rounding > FOUR_NINTHS)
-		toBeRounded = toBeRounded + 0.01;
+		toBeRounded += 0.01;
 		
 	rounding = (double)((int)(toBeRounded * 100.0)) / 100.0;
 		
